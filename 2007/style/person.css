@@ -1,0 +1,29 @@
+
+#sp_ctrl {width: 100px; }
+#sp_value {width: 100px; }
+#sp_elapsed {width: 100px; }
+#sp_split { width : 100px; }
+#sp_visits { width : 100px; }
+#sp_count { width : 100px; }
+#sp_mean { width : 100px; }
+#sp_median { width : 100px; }
+#sp_fastest { width : 100px; }
+#sp_slowest { width : 100px; }
+
+#summary { width : 250px; }
+
+.row_head
+{
+  width : 150px;
+}
+
+.cell_points
+{
+  text-align : right;
+}
+
+#grand_total
+{
+  font-size:120%;
+  font-weight: bold;
+}

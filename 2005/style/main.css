@@ -1,0 +1,6 @@
+/* we use classes instead of ids because there might be multiple tables  */
+.mn_name {width:350px; text-align : left;}
+.mn_place {width: 80px; }
+.mn_points {width: 100px; }
+.mn_penalty {width: 100px; }
+.mn_score { width : 100px; }

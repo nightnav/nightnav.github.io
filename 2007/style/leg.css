@@ -1,0 +1,14 @@
+
+#lg_rank {width: 80px; }
+#lg_name {width:350px; text-align : left;}
+#lg_time {width: 100px; }
+#lg_split {width: 100px; }
+#lg_next {width: 100px; }
+
+
+#summary { width : 220px; }
+
+.row_head
+{
+  width : 120px;
+}

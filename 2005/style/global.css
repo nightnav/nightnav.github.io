@@ -1,0 +1,94 @@
+body , p , h1 , h2 , h3, li , td , th , dd , dt  {
+          font-family : Verdana, Helvetica, Arial, sans-serif;
+          font-size : 10pt;
+          color : black;
+}
+body {
+    background-color : #ffffff;
+    color : #000000;
+}
+li , ul , ol {
+    list-style-image : none;
+}
+h1 , h2 , h3 , th {
+    font-weight : bold;
+}
+h1, h2 , h3 {
+    color : #ff9900;
+}
+h1 {
+    font-size : 16pt;
+}
+h2 {
+    font-size : 14pt;
+}
+h3 {
+    font-size : 12pt;
+}
+dd {
+    margin-left : 20px;
+}
+a:link {
+    text-decoration : none;
+}
+a:visited {
+    text-decoration : none;
+}
+a:active {
+    text-decoration : underline;
+}
+a:hover {
+    text-decoration : underline;
+}
+.HoverLink {
+    text-decoration : none;
+    font-size : 8pt;
+    padding : 1px 2px;
+    background-color : #fbedbb;
+    border-color : #fbedbb;
+    border-width : 1px;
+    border-style : solid;
+}
+A.HoverLink {
+    text-decoration : none;
+    color : blue;
+}
+A.HoverLink:hover {
+    border-color : #ff9900;
+    background-color : #ffcc99;
+}
+A.HoverLink:active {
+    background-color : #ffc082;
+    border-color : #ff9900;
+}
+
+.cell_time 
+{
+  text-align : center;
+}
+.cell_rank 
+{
+  text-align : center;
+}
+.cell_leg 
+{
+  text-align : center;
+}
+.cell_points
+{
+  text-align : center;
+}
+.row_head
+{
+  text-align : left;
+}
+
+table {
+  border:1px solid #000;
+  border-collapse:collapse;
+}
+td,th{
+  border:1px solid #000;
+  border-collapse:collapse;
+  padding:5px;
+}  
