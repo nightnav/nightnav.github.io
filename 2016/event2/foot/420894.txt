@@ -1,0 +1,27 @@
+ Claire & Lucy 	Tag ID: 420894 	Course: Foot Score
+
+From	To	Time Punched		Your Time	Place		Fastest Time	Median Time	% Behind Fastest
+Start 	127 	 	0:05:54 	30 / 30    	0:00:01 	0:00:32 	35300 %
+127 	92 	 	0:17:43 	6 / 6    	0:02:15 	0:04:11 	687 %
+92 	57 	 	0:05:37 	5 / 9    	0:01:59 	0:05:37 	183 %
+57 	107 	 	0:02:31 	9 / 21    	0:00:00 	0:02:52 	Invalid Time so no ranking info available 	
+107 	63 	 	0:04:08 	15 / 18    	0:01:59 	0:02:42 	108 %
+63 	32 	 	0:01:05 	16 / 27    	0:00:36 	0:00:56 	80 %
+32 	44 	 	0:02:13 	22 / 29    	0:00:52 	0:01:49 	155 %
+44 	53 	 	0:05:51 	26 / 26    	0:01:31 	0:02:15 	285 %
+53 	69 	 	0:01:40 	23 / 29    	0:00:45 	0:01:18 	122 %
+69 	71 	 	0:01:42 	18 / 25    	0:00:48 	0:01:13 	112 %
+71 	41 	 	0:02:02 	8 / 8    	0:00:47 	0:01:39 	159 %
+41 	60 	 	0:02:02 	2 / 4    	0:01:55 	0:02:33 	6 %
+60 	38 	 	0:03:26 	14 / 15    	0:00:00 	0:01:15 	Invalid Time so no ranking info available 	
+38 	Finish 	 	0:01:33 	5 / 10    	-1 day, 23:07:29 	0:01:37 	-99 %
+
+
+Extra Controls
+	Control Code	Points
+
+
+Points Scored:  700
+Late Penalty:  0
+Final Score:    700
+Total Time:  2000-01-01 00:57:27
