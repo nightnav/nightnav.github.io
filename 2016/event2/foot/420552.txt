@@ -1,0 +1,17 @@
+ Team USA 	Tag ID: 420552 	Course: Foot Score
+
+From	To	Time Punched		Your Time	Place		Fastest Time	Median Time	% Behind Fastest
+Start 	127 	 	0:01:09 	29 / 30    	0:00:01 	0:00:32 	6800 %
+127 	35 	 	0:08:35 	1 / 1    	0:08:35 	0:08:35 	0 %
+35 	42 	 	0:39:34 	1 / 1    	0:39:34 	0:39:34 	0 %
+42 	Finish 	 	0:04:00 	1 / 1    	0:04:00 	0:04:00 	0 %
+
+
+Extra Controls
+	Control Code	Points
+
+
+Points Scored:  90
+Late Penalty:  0
+Final Score:    90
+Total Time:  2000-01-01 00:53:18

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>43 - 60</title>
+        <style>
+            .datagrid table { border-collapse: collapse; text-align: left; width: 100%; }
+            .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+            .datagrid table td, .datagrid table th { padding: 0px 4px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEf4; color: #00557F; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }
+            <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.11.0.min.css" type="text/css" />
+        </style>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.11.0.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>43 - 60</h1>
+        </center>
+        <div style="float:left; width:50%; ">
+            <div class="datagrid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Place</th>
+                            <th>Time</th>
+                            <th>Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                            <td> 1 </td>
+                            <td> 0:00:16 </td>
+                            <td> <a href="982073.html">Conal Boland-Bristow </a> </td>
+                            <tr class="alt">
+                        <td> 2 </td>
+                            <td> 0:00:22 </td>
+                            <td> <a href="982081.html">Vivienne Prince </a> </td>
+                            <tr>
+                            <td> 3 </td>
+                            <td> 0:00:24 </td>
+                            <td> <a href="887301.html">Deb Bain </a> </td>
+                            <tr class="alt">
+                        <td> 4 </td>
+                            <td> 0:00:34 </td>
+                            <td> <a href="982083.html">Dave Armstrong </a> </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="float:right; width:50%; ">
+            
+<div class="plotdiv" id="626ab4a7-dfe3-434a-ac00-4e9de8a3b0ba"></div>
+            
+<script type="text/javascript">
+    Bokeh.$(function() {
+    var docs_json = {"5ef16e8d-3254-4baa-beff-04e370259d11": {"version": "0.11.0", "roots": {"root_ids": ["f9fc3f50-6b26-4219-b7ea-f68e64a5714d"], "references": [{"attributes": {"callback": null, "column_names": ["url"], "data": {"url": ["map.jpg"]}}, "type": "ColumnDataSource", "id": "a093f60e-905c-447a-8f17-531079fc70e6"}, {"attributes": {"callback": null, "end": 251}, "type": "Range1d", "id": "2504705a-847a-405e-83eb-a8a045bd06ad"}, {"attributes": {}, "type": "ToolEvents", "id": "f7926d6f-9ab6-4e23-bd17-f5dfdd5816d9"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f9fc3f50-6b26-4219-b7ea-f68e64a5714d"}, "ticker": {"type": "BasicTicker", "id": "d2e3fa97-accb-4e48-8589-28630544428f"}}, "type": "Grid", "id": "ac224b1f-f7a1-43f8-9b99-c627cfaf907e"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "e918efa2-addd-4449-aad5-dc8ffb5023e7"}, {"attributes": {}, "type": "BasicTicker", "id": "356e1cc1-60a4-4ef2-972a-17673cae3939"}, {"attributes": {}, "type": "BasicTicker", "id": "d2e3fa97-accb-4e48-8589-28630544428f"}, {"attributes": {"url": {"field": "url"}, "x": {"value": -367}, "y": {"value": 912}}, "type": "ImageURL", "id": "4e727a7e-5e3c-4ece-a7f2-f76f87ebac4a"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f9fc3f50-6b26-4219-b7ea-f68e64a5714d"}, "formatter": {"type": "BasicTickFormatter", "id": "e918efa2-addd-4449-aad5-dc8ffb5023e7"}, "ticker": {"type": "BasicTicker", "id": "d2e3fa97-accb-4e48-8589-28630544428f"}, "visible": null}, "type": "LinearAxis", "id": "7d19a796-42be-4859-8cb1-6b0e12ad2744"}, {"attributes": {"nonselection_glyph": {"type": "ImageURL", "id": "4e727a7e-5e3c-4ece-a7f2-f76f87ebac4a"}, "data_source": {"type": "ColumnDataSource", "id": "a093f60e-905c-447a-8f17-531079fc70e6"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "ImageURL", "id": "ddea20b3-03d5-4ff5-bf06-7d9167cd7f2c"}}, "type": "GlyphRenderer", "id": "30480827-c3cf-433e-80d7-1678f5dcaab0"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f9fc3f50-6b26-4219-b7ea-f68e64a5714d"}, "ticker": {"type": "BasicTicker", "id": "356e1cc1-60a4-4ef2-972a-17673cae3939"}, "dimension": 1}, "type": "Grid", "id": "9340c013-52c1-4db4-b330-b792860faec5"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "f07c648d-088d-49ec-906e-91bff228a22e"}, {"attributes": {"callback": null, "end": 276}, "type": "Range1d", "id": "2d7cc21e-3325-4694-bead-1392e251acc6"}, {"attributes": {"callback": null, "column_names": ["y", "x"], "data": {"y": [177, 100], "x": [152, 100]}}, "type": "ColumnDataSource", "id": "ecd55ed0-a132-4ba0-b8e9-98f999ad08fe"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.1}, "y": {"field": "y"}, "x": {"field": "x"}, "line_width": {"value": 3}}, "type": "Line", "id": "1fe29154-d408-4116-8db9-d1ba64d00561"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f9fc3f50-6b26-4219-b7ea-f68e64a5714d"}, "formatter": {"type": "BasicTickFormatter", "id": "f07c648d-088d-49ec-906e-91bff228a22e"}, "ticker": {"type": "BasicTicker", "id": "356e1cc1-60a4-4ef2-972a-17673cae3939"}, "visible": null}, "type": "LinearAxis", "id": "541425bf-45d5-4c8c-b9d7-ee40a7d08938"}, {"attributes": {"line_color": {"value": "red"}, "line_alpha": {"value": 0.5}, "y": {"field": "y"}, "x": {"field": "x"}, "line_width": {"value": 3}}, "type": "Line", "id": "3b43803d-84e4-4675-b951-e694a6c068fd"}, {"attributes": {"nonselection_glyph": {"type": "Line", "id": "1fe29154-d408-4116-8db9-d1ba64d00561"}, "data_source": {"type": "ColumnDataSource", "id": "ecd55ed0-a132-4ba0-b8e9-98f999ad08fe"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "Line", "id": "3b43803d-84e4-4675-b951-e694a6c068fd"}}, "type": "GlyphRenderer", "id": "d28b1771-fd1f-4122-88e7-8ad29de4a55f"}, {"attributes": {"url": {"field": "url"}, "x": {"value": -367}, "y": {"value": 912}}, "type": "ImageURL", "id": "ddea20b3-03d5-4ff5-bf06-7d9167cd7f2c"}, {"attributes": {"x_range": {"type": "Range1d", "id": "2504705a-847a-405e-83eb-a8a045bd06ad"}, "min_border_bottom": 0, "toolbar_location": null, "plot_height": 277, "plot_width": 252, "renderers": [{"type": "LinearAxis", "id": "7d19a796-42be-4859-8cb1-6b0e12ad2744"}, {"type": "Grid", "id": "ac224b1f-f7a1-43f8-9b99-c627cfaf907e"}, {"type": "LinearAxis", "id": "541425bf-45d5-4c8c-b9d7-ee40a7d08938"}, {"type": "Grid", "id": "9340c013-52c1-4db4-b330-b792860faec5"}, {"type": "GlyphRenderer", "id": "30480827-c3cf-433e-80d7-1678f5dcaab0"}, {"type": "GlyphRenderer", "id": "d28b1771-fd1f-4122-88e7-8ad29de4a55f"}], "below": [{"type": "LinearAxis", "id": "7d19a796-42be-4859-8cb1-6b0e12ad2744"}], "min_border_top": 0, "tool_events": {"type": "ToolEvents", "id": "f7926d6f-9ab6-4e23-bd17-f5dfdd5816d9"}, "min_border_left": 0, "logo": null, "min_border_right": 0, "y_range": {"type": "Range1d", "id": "2d7cc21e-3325-4694-bead-1392e251acc6"}, "left": [{"type": "LinearAxis", "id": "541425bf-45d5-4c8c-b9d7-ee40a7d08938"}]}, "type": "Plot", "id": "f9fc3f50-6b26-4219-b7ea-f68e64a5714d", "subtype": "Figure"}]}, "title": "Bokeh Application"}};
+    var render_items = [{"docid": "5ef16e8d-3254-4baa-beff-04e370259d11", "elementid": "626ab4a7-dfe3-434a-ac00-4e9de8a3b0ba", "modelid": "f9fc3f50-6b26-4219-b7ea-f68e64a5714d"}];
+    
+    Bokeh.embed.embed_items(docs_json, render_items);
+});
+</script>
+        </div>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-25872368-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

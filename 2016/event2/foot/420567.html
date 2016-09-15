@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Philipp Suellrop</title>
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.css" type="text/css" />
+
+    <script src="jquery.js"></script>
+    <script src="jquery.panzoom.min.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.js"></script>
+    <script type="text/javascript"> Bokeh.set_log_level("info"); </script>
+    <style>
+    .background { position: relative; top: 0; left: 0; z-index: 1; }
+    .foreground { position: absolute; top: 0; left: 0; z-index: 2; }
+
+    .datagrid table { border-collapse: collapse; text-align: left; width: 100%; }
+    .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+    .datagrid table td, .datagrid table th { padding: 0px 4px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEf4; color: #00557F; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }}
+    </style>
+</head>
+
+<body>
+<h1><a href="420567test.html">Philipp Suellrop</a> Course Foot Score</h1>
+<div style="float:left; width:50%;">
+    <div class="datagrid">
+    <table>
+        <thead>
+            <tr>
+            <th>Control</th>
+            <th>Points</th>
+            <th>Time Punched</th>
+            <th>Distance</th>
+            <th>Your Time</th>
+            <th>Pace</th>
+            <th>Place</th>
+            <th>Fastest Time</th>
+            <th>Median Time</th>
+            <th>% Behind Fastest</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="Start-127.html">127</a></td>
+            <td> 20 </td>
+            <td>  </td>
+            <td> 0.06 </td>
+            <td> 0:00:09</td>
+            <td> 02:30</td>
+            <td> 6 / 30</td>
+            <td> 0:00:01</td>
+            <td> 0:00:32</td>
+            <td> 800%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="127-92.html">92</a></td>
+            <td> 90 </td>
+            <td>  </td>
+            <td> 0.21 </td>
+            <td> 0:02:15</td>
+            <td> 10:42</td>
+            <td> 1 / 6</td>
+            <td> 0:02:15</td>
+            <td> 0:04:11</td>
+            <td> 0%</td>
+        </tr>
+        <tr>
+            <td><a href="92-35.html">35</a></td>
+            <td> 30 </td>
+            <td>  </td>
+            <td> 0.05 </td>
+            <td> 0:01:31</td>
+            <td> 30:20</td>
+            <td> 1 / 12</td>
+            <td> 0:01:31</td>
+            <td> 0:01:55</td>
+            <td> 0%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="35-47.html">47</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.09 </td>
+            <td> 0:00:55</td>
+            <td> 10:11</td>
+            <td> 2 / 11</td>
+            <td> 0:00:54</td>
+            <td> 0:01:31</td>
+            <td> 1%</td>
+        </tr>
+        <tr>
+            <td><a href="47-123.html">123</a></td>
+            <td> 20 </td>
+            <td>  </td>
+            <td> 0.24 </td>
+            <td> 0:02:23</td>
+            <td> 09:55</td>
+            <td> 1 / 5</td>
+            <td> 0:02:23</td>
+            <td> 0:02:41</td>
+            <td> 0%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="123-109.html">109</a></td>
+            <td> 100 </td>
+            <td>  </td>
+            <td> 0.31 </td>
+            <td> 0:02:14</td>
+            <td> 07:12</td>
+            <td> 2 / 7</td>
+            <td> 0:02:09</td>
+            <td> 0:02:32</td>
+            <td> 3%</td>
+        </tr>
+        <tr>
+            <td><a href="109-52.html">52</a></td>
+            <td> 50 </td>
+            <td>  </td>
+            <td> 0.26 </td>
+            <td> 0:02:08</td>
+            <td> 08:12</td>
+            <td> 2 / 6</td>
+            <td> 0:02:01</td>
+            <td> 0:02:27</td>
+            <td> 5%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="52-81.html">81</a></td>
+            <td> 80 </td>
+            <td>  </td>
+            <td> 0.17 </td>
+            <td> 0:01:45</td>
+            <td> 10:17</td>
+            <td> 3 / 4</td>
+            <td> 0:01:42</td>
+            <td> 0:01:44</td>
+            <td> 2%</td>
+        </tr>
+        <tr>
+            <td><a href="81-56.html">56</a></td>
+            <td> 50 </td>
+            <td>  </td>
+            <td> 0.19 </td>
+            <td> 0:01:51</td>
+            <td> 09:44</td>
+            <td> 2 / 3</td>
+            <td> 0:01:44</td>
+            <td> 0:01:51</td>
+            <td> 6%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="56-75.html">75</a></td>
+            <td> 70 </td>
+            <td>  </td>
+            <td> 0.06 </td>
+            <td> 0:00:30</td>
+            <td> 08:20</td>
+            <td> 1 / 4</td>
+            <td> 0:00:30</td>
+            <td> 0:00:48</td>
+            <td> 0%</td>
+        </tr>
+        <tr>
+            <td><a href="75-46.html">46</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.21 </td>
+            <td> 0:02:55</td>
+            <td> 13:53</td>
+            <td> 4 / 4</td>
+            <td> 0:01:20</td>
+            <td> 0:01:53</td>
+            <td> 118%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="46-49.html">49</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.23 </td>
+            <td> 0:02:15</td>
+            <td> 09:46</td>
+            <td> 5 / 6</td>
+            <td> 0:01:50</td>
+            <td> 0:02:11</td>
+            <td> 22%</td>
+        </tr>
+        <tr>
+            <td><a href="49-64.html">64</a></td>
+            <td> 60 </td>
+            <td>  </td>
+            <td> 0.12 </td>
+            <td> 0:00:53</td>
+            <td> 07:21</td>
+            <td> 1 / 8</td>
+            <td> 0:00:53</td>
+            <td> 0:00:55</td>
+            <td> 0%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="64-48.html">48</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.07 </td>
+            <td> 0:00:35</td>
+            <td> 08:19</td>
+            <td> 2 / 9</td>
+            <td> 0:00:34</td>
+            <td> 0:00:47</td>
+            <td> 2%</td>
+        </tr>
+        <tr>
+            <td><a href="48-37.html">37</a></td>
+            <td> 30 </td>
+            <td>  </td>
+            <td> 0.28 </td>
+            <td> 0:03:32</td>
+            <td> 12:37</td>
+            <td> 2 / 4</td>
+            <td> 0:03:12</td>
+            <td> 0:03:43</td>
+            <td> 10%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="37-42.html">42</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.26 </td>
+            <td> 0:02:08</td>
+            <td> 08:12</td>
+            <td> 1 / 6</td>
+            <td> 0:02:08</td>
+            <td> 0:03:18</td>
+            <td> 0%</td>
+        </tr>
+        <tr>
+            <td><a href="42-61.html">61</a></td>
+            <td> 60 </td>
+            <td>  </td>
+            <td> 0.21 </td>
+            <td> 0:02:59</td>
+            <td> 14:12</td>
+            <td> 4 / 20</td>
+            <td> 0:02:20</td>
+            <td> 0:03:34</td>
+            <td> 27%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="61-59.html">59</a></td>
+            <td> 50 </td>
+            <td>  </td>
+            <td> 0.24 </td>
+            <td> 0:01:57</td>
+            <td> 08:07</td>
+            <td> 3 / 19</td>
+            <td> 0:01:47</td>
+            <td> 0:02:30</td>
+            <td> 9%</td>
+        </tr>
+        <tr>
+            <td><a href="59-77.html">77</a></td>
+            <td> 70 </td>
+            <td>  </td>
+            <td> 0.21 </td>
+            <td> 0:01:31</td>
+            <td> 07:13</td>
+            <td> 2 / 17</td>
+            <td> 0:01:25</td>
+            <td> 0:02:33</td>
+            <td> 7%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="77-40.html">40</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.18 </td>
+            <td> 0:01:44</td>
+            <td> 09:37</td>
+            <td> 2 / 18</td>
+            <td> 0:01:16</td>
+            <td> 0:02:38</td>
+            <td> 36%</td>
+        </tr>
+        <tr>
+            <td><a href="40-41.html">41</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.11 </td>
+            <td> 0:00:30</td>
+            <td> 04:32</td>
+            <td> 2 / 20</td>
+            <td> 0:00:28</td>
+            <td> 0:01:07</td>
+            <td> 7%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="41-71.html">71</a></td>
+            <td> 70 </td>
+            <td>  </td>
+            <td> 0.09 </td>
+            <td> 0:01:12</td>
+            <td> 13:20</td>
+            <td> 6 / 12</td>
+            <td> 0:00:33</td>
+            <td> 0:01:12</td>
+            <td> 118%</td>
+        </tr>
+        <tr>
+            <td><a href="71-54.html">54</a></td>
+            <td> 50 </td>
+            <td>  </td>
+            <td> 0.08 </td>
+            <td> 0:00:32</td>
+            <td> 06:40</td>
+            <td> 2 / 33</td>
+            <td> 0:00:27</td>
+            <td> 0:00:45</td>
+            <td> 18%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="54-69.html">69</a></td>
+            <td> 60 </td>
+            <td>  </td>
+            <td> 0.07 </td>
+            <td> 0:01:54</td>
+            <td> 27:08</td>
+            <td> 10 / 20</td>
+            <td> 0:01:00</td>
+            <td> 0:01:56</td>
+            <td> 90%</td>
+        </tr>
+        <tr>
+            <td><a href="69-53.html">53</a></td>
+            <td> 50 </td>
+            <td>  </td>
+            <td> 0.12 </td>
+            <td> 0:01:24</td>
+            <td> 11:40</td>
+            <td> 3 / 26</td>
+            <td> 0:01:16</td>
+            <td> 0:01:51</td>
+            <td> 10%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="53-44.html">44</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.2 </td>
+            <td> 0:01:06</td>
+            <td> 05:30</td>
+            <td> 3 / 22</td>
+            <td> 0:00:39</td>
+            <td> 0:01:40</td>
+            <td> 69%</td>
+        </tr>
+        <tr>
+            <td><a href="44-32.html">32</a></td>
+            <td> 30 </td>
+            <td>  </td>
+            <td> 0.12 </td>
+            <td> 0:01:22</td>
+            <td> 11:23</td>
+            <td> 13 / 22</td>
+            <td> 0:00:43</td>
+            <td> 0:01:19</td>
+            <td> 90%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="32-63.html">63</a></td>
+            <td> 60 </td>
+            <td>  </td>
+            <td> 0.15 </td>
+            <td> 0:01:10</td>
+            <td> 07:46</td>
+            <td> 4 / 25</td>
+            <td> 0:01:05</td>
+            <td> 0:01:29</td>
+            <td> 7%</td>
+        </tr>
+        <tr>
+            <td><a href="63-107.html">107</a></td>
+            <td> 100 </td>
+            <td>  </td>
+            <td> 0.35 </td>
+            <td> 0:02:45</td>
+            <td> 07:51</td>
+            <td> 4 / 22</td>
+            <td> 0:02:14</td>
+            <td> 0:03:49</td>
+            <td> 23%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="107-57.html">57</a></td>
+            <td> 50 </td>
+            <td>  </td>
+            <td> 0.2 </td>
+            <td> 0:02:15</td>
+            <td> 11:15</td>
+            <td> 2 / 22</td>
+            <td> 0:01:54</td>
+            <td> 0:03:53</td>
+            <td> 18%</td>
+        </tr>
+        <tr>
+            <td><a href="57-126.html">126</a></td>
+            <td> 20 </td>
+            <td>  </td>
+            <td> 0.38 </td>
+            <td> -1 day, 23:09:40</td>
+            <td> 60:57:01</td>
+            <td> 1 / 1</td>
+            <td> -1 day, 23:09:40</td>
+            <td> -1 day, 23:09:40</td>
+            <td> 0%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="126-130.html">130</a></td>
+            <td> 30 </td>
+            <td>  </td>
+            <td> 0.14 </td>
+            <td> 0:00:00</td>
+            <td> 00:00</td>
+            <td> 1 / 19</td>
+            <td> 0:00:00</td>
+            <td> 0:00:33</td>
+            <td> -%</td>
+        </tr>
+        <tr>
+            <td><a href="130-60.html">60</a></td>
+            <td> 60 </td>
+            <td>  </td>
+            <td> 0.21 </td>
+            <td> 0:00:00</td>
+            <td> 00:00</td>
+            <td> 1 / 5</td>
+            <td> 0:00:00</td>
+            <td> 0:01:57</td>
+            <td> -%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="60-38.html">38</a></td>
+            <td> 30 </td>
+            <td>  </td>
+            <td> 0.11 </td>
+            <td> 0:00:00</td>
+            <td> 00:00</td>
+            <td> 1 / 15</td>
+            <td> 0:00:00</td>
+            <td> 0:01:15</td>
+            <td> -%</td>
+        </tr>
+        <tr>
+            <td><a href="38-Finish.html">Finish</a></td>
+            <td> 0 </td>
+            <td>  </td>
+            <td> 0.2 </td>
+            <td> 0:56:37</td>
+            <td> 4:43:05</td>
+            <td> 9 / 10</td>
+            <td> -1 day, 23:07:29</td>
+            <td> 0:01:37</td>
+            <td> -95%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<span title="This is the straight line distance between controls. It does not take into account&#10;the actual route the team took and does not allow for climb."> Total Distance Covered: 6.18km </span><br>
+    Points Scored: 1710<br>
+    Late Penalty: 0<br>
+    Final Score: 1710<br>
+    Total Time: 0hours 56minutes 37seconds<br>
+    <span title="Efficiency is the number of points scored per km, the higher the number the more&#10;efficient the route. This doesn't take into account the climb though so is at best&#10;a rough approximation of the most efficient route.">Efficiency: 276.7 points/km</span><br>
+</div>
+<div style="float:right; width:50%; ">
+
+<div class="plotdiv" id="24203564-9230-4978-b83e-57c7212721d2"></div>
+
+<script type="text/javascript">
+    Bokeh.$(function() {
+    var docs_json = {"7f2fc92f-2397-46f8-8354-38639d1ed1bd": {"version": "0.11.0", "roots": {"root_ids": ["3c849770-5667-4f7d-a927-a87c3bc81b9b"], "references": [{"attributes": {"x_range": {"type": "DataRange1d", "id": "a128f311-538a-49a3-82c3-0dbba53874c1"}, "y_range": {"type": "DataRange1d", "id": "d0bf7422-24dc-498f-a345-78d7058e66ac"}, "toolbar_location": null, "renderers": [{"type": "LinearAxis", "id": "7fdac265-3c8b-4258-bed8-756640a9bb73"}, {"type": "Grid", "id": "bf899c68-d3b5-48ae-8198-c9ab19eb0341"}, {"type": "LinearAxis", "id": "2ebf5a84-0a76-4322-9c95-c276f2f7ea79"}, {"type": "Grid", "id": "0ed8e07d-75e3-489a-8bb2-28855b53b013"}, {"type": "GlyphRenderer", "id": "fbb2dc3d-170e-441c-8ced-df122aed861c"}, {"type": "BoxAnnotation", "id": "f16f2809-f64f-4804-ba86-48e5356f8c82"}], "plot_width": 800, "below": [{"type": "LinearAxis", "id": "7fdac265-3c8b-4258-bed8-756640a9bb73"}], "tool_events": {"type": "ToolEvents", "id": "8469bd55-bccc-4188-934f-32ed89d52afd"}, "plot_height": 250, "logo": null, "tools": [{"type": "HoverTool", "id": "a355c868-73ce-45da-bcb8-b3eb7895ed90"}, {"type": "CrosshairTool", "id": "146d72f3-594b-4077-8bf4-a0572996b7a1"}], "left": [{"type": "LinearAxis", "id": "2ebf5a84-0a76-4322-9c95-c276f2f7ea79"}]}, "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b", "subtype": "Figure"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}, "ticker": {"type": "SingleIntervalTicker", "id": "a1ccaa5d-8368-4e20-ab07-90800a68b61c"}}, "type": "Grid", "id": "bf899c68-d3b5-48ae-8198-c9ab19eb0341"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}, "axis_label": "Score (pts)", "formatter": {"type": "BasicTickFormatter", "id": "be355331-f3fe-460d-8b4c-045f7b8e75c3"}, "ticker": {"type": "BasicTicker", "id": "2fce65c2-dde4-4cef-b9b0-db88b6051e70"}}, "type": "LinearAxis", "id": "2ebf5a84-0a76-4322-9c95-c276f2f7ea79"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "d0bf7422-24dc-498f-a345-78d7058e66ac"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}, "right": 19.0, "fill_alpha": {"value": 0.1}, "fill_color": {"value": "grey"}, "left": 0.0}, "type": "BoxAnnotation", "id": "f16f2809-f64f-4804-ba86-48e5356f8c82"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "a1ccaa5d-8368-4e20-ab07-90800a68b61c"}, {"attributes": {"callback": null, "column_names": ["control", "elapsedTime", "score", "dist", "xCoord", "yCoord", "time_of_day"], "data": {"control": ["", "127", "92", "35", "47", "123", "109", "52", "81", "56", "75", "46", "49", "64", "48", "37", "42", "61", "59", "77", "40", "41", "71", "54", "69", "53", "44", "32", "63", "107", "57", "126", "130", "60", "38", "Finish", "Extras"], "dist": [0.0, 0.06, 0.27, 0.32, 0.41, 0.65, 0.96, 1.22, 1.39, 1.58, 1.64, 1.85, 2.08, 2.2, 2.27, 2.55, 2.81, 3.02, 3.26, 3.47, 3.65, 3.76, 3.85, 3.93, 4.0, 4.12, 4.32, 4.44, 4.59, 4.94, 5.14, 5.52, 5.66, 5.87, 5.98, 6.18, 6.18], "yCoord": [554, 554, 521, 622, 597, 626, 796, 808, 641, 692, 537, 492, 497, 634, 594, 567, 401, 390, 243, 260, 142, 268, 331, 324, 384, 369, 434, 552, 644, 660, 787, 711, 564, 516, 388, 395, 554], "elapsedTime": [0.0, 0.0025, 0.04, 0.06527777777777778, 0.08055555555555556, 0.12027777777777778, 0.1575, 0.19305555555555556, 0.2222222222222222, 0.25305555555555553, 0.2613888888888889, 0.31, 0.3475, 0.3622222222222222, 0.37194444444444447, 0.43083333333333335, 0.4663888888888889, 0.5161111111111111, 0.5486111111111112, 0.5738888888888889, 0.6027777777777777, 0.6111111111111112, 0.6311111111111111, 0.64, 0.6716666666666666, 0.695, 0.7133333333333334, 0.7361111111111112, 0.7555555555555555, 0.8013888888888889, 0.8388888888888889, 0.0, 0.0, 0.0, 0.0, 0.9436111111111111, 0.9436111111111111], "time_of_day": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "score": [0, 20, 110, 140, 180, 200, 300, 350, 430, 480, 550, 590, 630, 690, 730, 760, 800, 860, 910, 980, 1020, 1060, 1130, 1180, 1240, 1290, 1330, 1360, 1420, 1520, 1570, 1590, 1620, 1680, 1710, 1710, 1710], "xCoord": [587, 587, 627, 760, 790, 854, 942, 1191, 1310, 1439, 1451, 1466, 1297, 1169, 1080, 1030, 883, 676, 601, 411, 297, 223, 288, 218, 242, 192, 120, 232, 215, 334, 582, 720, 455, 358, 466, 550, 588]}}, "type": "ColumnDataSource", "id": "faedf30b-8203-42ed-be06-f2b50b06c06f"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}, "axis_label": "Time (hrs)", "formatter": {"type": "BasicTickFormatter", "id": "7c519527-1955-4fcc-973c-3e950ac11476"}, "ticker": {"type": "SingleIntervalTicker", "id": "16ad3e8a-bc89-40fc-9811-bd908c6b83e8"}}, "type": "LinearAxis", "id": "7fdac265-3c8b-4258-bed8-756640a9bb73"}, {"attributes": {"nonselection_glyph": {"type": "Line", "id": "93c21914-6d26-48fa-afd4-2f9314f709da"}, "data_source": {"type": "ColumnDataSource", "id": "faedf30b-8203-42ed-be06-f2b50b06c06f"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "Line", "id": "328f0429-a80f-4c11-95eb-8f30b27831c2"}}, "type": "GlyphRenderer", "id": "fbb2dc3d-170e-441c-8ced-df122aed861c"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.8}, "y": {"field": "score"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "328f0429-a80f-4c11-95eb-8f30b27831c2"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.1}, "y": {"field": "score"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "93c21914-6d26-48fa-afd4-2f9314f709da"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "16ad3e8a-bc89-40fc-9811-bd908c6b83e8"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "be355331-f3fe-460d-8b4c-045f7b8e75c3"}, {"attributes": {}, "type": "BasicTicker", "id": "2fce65c2-dde4-4cef-b9b0-db88b6051e70"}, {"attributes": {}, "type": "ToolEvents", "id": "8469bd55-bccc-4188-934f-32ed89d52afd"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "7c519527-1955-4fcc-973c-3e950ac11476"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}}, "type": "CrosshairTool", "id": "146d72f3-594b-4077-8bf4-a0572996b7a1"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "a128f311-538a-49a3-82c3-0dbba53874c1"}, {"attributes": {"tooltips": [["control", "@control"], ["score", "@score"], ["dist", "@dist"], ["Time", "@time_of_day"]], "callback": null, "plot": {"subtype": "Figure", "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}}, "type": "HoverTool", "id": "a355c868-73ce-45da-bcb8-b3eb7895ed90"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}, "ticker": {"type": "BasicTicker", "id": "2fce65c2-dde4-4cef-b9b0-db88b6051e70"}, "dimension": 1}, "type": "Grid", "id": "0ed8e07d-75e3-489a-8bb2-28855b53b013"}]}, "title": "Bokeh Application"}};
+    var render_items = [{"docid": "7f2fc92f-2397-46f8-8354-38639d1ed1bd", "elementid": "24203564-9230-4978-b83e-57c7212721d2", "modelid": "3c849770-5667-4f7d-a927-a87c3bc81b9b"}];
+    
+    Bokeh.embed.embed_items(docs_json, render_items);
+});
+</script>
+
+<div class="plotdiv" id="084a24a9-6318-4281-b0b8-1f45ff1ec4df"></div>
+
+<script type="text/javascript">
+    Bokeh.$(function() {
+    var docs_json = {"28f7fb4e-2a51-4db6-a442-6f9f207a465a": {"version": "0.11.0", "roots": {"root_ids": ["3647f310-545d-4d2c-9342-701d4e70f52e"], "references": [{"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e"}, "ticker": {"type": "SingleIntervalTicker", "id": "cc32b2a2-e4b5-4c2f-826b-b48b6521d753"}}, "type": "Grid", "id": "6e405213-c5f0-4ee9-ac5c-d93c073941d0"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "d6b92f54-ca18-4662-9c53-c9e71b55f6ef"}, {"attributes": {}, "type": "ToolEvents", "id": "58b98667-5d0d-4e61-b99a-78867c05af86"}, {"attributes": {}, "type": "BasicTicker", "id": "088cc4e3-91e5-44e4-8ece-35d17e6af0a8"}, {"attributes": {"callback": null, "column_names": ["control", "elapsedTime", "score", "dist", "xCoord", "yCoord", "time_of_day"], "data": {"control": ["", "127", "92", "35", "47", "123", "109", "52", "81", "56", "75", "46", "49", "64", "48", "37", "42", "61", "59", "77", "40", "41", "71", "54", "69", "53", "44", "32", "63", "107", "57", "126", "130", "60", "38", "Finish", "Extras"], "dist": [0.0, 0.06, 0.27, 0.32, 0.41, 0.65, 0.96, 1.22, 1.39, 1.58, 1.64, 1.85, 2.08, 2.2, 2.27, 2.55, 2.81, 3.02, 3.26, 3.47, 3.65, 3.76, 3.85, 3.93, 4.0, 4.12, 4.32, 4.44, 4.59, 4.94, 5.14, 5.52, 5.66, 5.87, 5.98, 6.18, 6.18], "yCoord": [554, 554, 521, 622, 597, 626, 796, 808, 641, 692, 537, 492, 497, 634, 594, 567, 401, 390, 243, 260, 142, 268, 331, 324, 384, 369, 434, 552, 644, 660, 787, 711, 564, 516, 388, 395, 554], "elapsedTime": [0.0, 0.0025, 0.04, 0.06527777777777778, 0.08055555555555556, 0.12027777777777778, 0.1575, 0.19305555555555556, 0.2222222222222222, 0.25305555555555553, 0.2613888888888889, 0.31, 0.3475, 0.3622222222222222, 0.37194444444444447, 0.43083333333333335, 0.4663888888888889, 0.5161111111111111, 0.5486111111111112, 0.5738888888888889, 0.6027777777777777, 0.6111111111111112, 0.6311111111111111, 0.64, 0.6716666666666666, 0.695, 0.7133333333333334, 0.7361111111111112, 0.7555555555555555, 0.8013888888888889, 0.8388888888888889, 0.0, 0.0, 0.0, 0.0, 0.9436111111111111, 0.9436111111111111], "time_of_day": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "score": [0, 20, 110, 140, 180, 200, 300, 350, 430, 480, 550, 590, 630, 690, 730, 760, 800, 860, 910, 980, 1020, 1060, 1130, 1180, 1240, 1290, 1330, 1360, 1420, 1520, 1570, 1590, 1620, 1680, 1710, 1710, 1710], "xCoord": [587, 587, 627, 760, 790, 854, 942, 1191, 1310, 1439, 1451, 1466, 1297, 1169, 1080, 1030, 883, 676, 601, 411, 297, 223, 288, 218, 242, 192, 120, 232, 215, 334, 582, 720, 455, 358, 466, 550, 588]}}, "type": "ColumnDataSource", "id": "60731c3d-3503-40e6-9e62-bf8dd4026360"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "b84041c8-aaed-486f-9ec9-e461382de28f"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e"}, "right": 19.0, "fill_alpha": {"value": 0.1}, "fill_color": {"value": "grey"}, "left": 0.0}, "type": "BoxAnnotation", "id": "35e19fe7-b806-4f95-a479-b300fd4489aa"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "6de03f8f-3d92-45b3-903d-8510d77e84d2"}, {"attributes": {"tooltips": [["control", "@control"], ["score", "@score"], ["dist", "@dist"], ["Time", "@time_of_day"]], "callback": null, "plot": {"subtype": "Figure", "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e"}}, "type": "HoverTool", "id": "5f61d605-177f-4120-94d6-79a4239bed53"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e"}}, "type": "CrosshairTool", "id": "c8f832e5-4c8e-4591-9350-54520365dd9a"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.1}, "y": {"field": "dist"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "d7e91b3f-f6f2-4309-b207-e6d38397a782"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "d6faec55-1d75-43bd-8808-edbb661e9be2"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e"}, "axis_label": "Time (hrs)", "formatter": {"type": "BasicTickFormatter", "id": "6856cee4-341b-4c23-a913-89536649a1b8"}, "ticker": {"type": "SingleIntervalTicker", "id": "b84041c8-aaed-486f-9ec9-e461382de28f"}}, "type": "LinearAxis", "id": "2a282a06-5d2f-4e55-8c4f-13c86d225e76"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "6856cee4-341b-4c23-a913-89536649a1b8"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e"}, "ticker": {"type": "BasicTicker", "id": "088cc4e3-91e5-44e4-8ece-35d17e6af0a8"}, "dimension": 1}, "type": "Grid", "id": "5adebb36-1ed1-4f8f-8d52-02735866be0c"}, {"attributes": {"x_range": {"type": "DataRange1d", "id": "d6faec55-1d75-43bd-8808-edbb661e9be2"}, "y_range": {"type": "DataRange1d", "id": "6de03f8f-3d92-45b3-903d-8510d77e84d2"}, "toolbar_location": null, "renderers": [{"type": "LinearAxis", "id": "2a282a06-5d2f-4e55-8c4f-13c86d225e76"}, {"type": "Grid", "id": "6e405213-c5f0-4ee9-ac5c-d93c073941d0"}, {"type": "LinearAxis", "id": "6c93eed7-f6dd-4a91-8d33-451811951891"}, {"type": "Grid", "id": "5adebb36-1ed1-4f8f-8d52-02735866be0c"}, {"type": "GlyphRenderer", "id": "e4543d32-4a9e-40e4-b609-f2b551f1aeca"}, {"type": "BoxAnnotation", "id": "35e19fe7-b806-4f95-a479-b300fd4489aa"}], "plot_width": 800, "below": [{"type": "LinearAxis", "id": "2a282a06-5d2f-4e55-8c4f-13c86d225e76"}], "tool_events": {"type": "ToolEvents", "id": "58b98667-5d0d-4e61-b99a-78867c05af86"}, "plot_height": 250, "logo": null, "tools": [{"type": "HoverTool", "id": "5f61d605-177f-4120-94d6-79a4239bed53"}, {"type": "CrosshairTool", "id": "c8f832e5-4c8e-4591-9350-54520365dd9a"}], "left": [{"type": "LinearAxis", "id": "6c93eed7-f6dd-4a91-8d33-451811951891"}]}, "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e", "subtype": "Figure"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "cc32b2a2-e4b5-4c2f-826b-b48b6521d753"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.8}, "y": {"field": "dist"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "99130b0e-9312-43ac-855d-ecf1b939eac7"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "3647f310-545d-4d2c-9342-701d4e70f52e"}, "axis_label": "Dist (km)", "formatter": {"type": "BasicTickFormatter", "id": "d6b92f54-ca18-4662-9c53-c9e71b55f6ef"}, "ticker": {"type": "BasicTicker", "id": "088cc4e3-91e5-44e4-8ece-35d17e6af0a8"}}, "type": "LinearAxis", "id": "6c93eed7-f6dd-4a91-8d33-451811951891"}, {"attributes": {"nonselection_glyph": {"type": "Line", "id": "d7e91b3f-f6f2-4309-b207-e6d38397a782"}, "data_source": {"type": "ColumnDataSource", "id": "60731c3d-3503-40e6-9e62-bf8dd4026360"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "Line", "id": "99130b0e-9312-43ac-855d-ecf1b939eac7"}}, "type": "GlyphRenderer", "id": "e4543d32-4a9e-40e4-b609-f2b551f1aeca"}]}, "title": "Bokeh Application"}};
+    var render_items = [{"docid": "28f7fb4e-2a51-4db6-a442-6f9f207a465a", "elementid": "084a24a9-6318-4281-b0b8-1f45ff1ec4df", "modelid": "3647f310-545d-4d2c-9342-701d4e70f52e"}];
+    
+    Bokeh.embed.embed_items(docs_json, render_items);
+});
+</script>
+
+    <section id="focal">
+      <div style="position: relative; left: 0; top: 0;" class="parent">
+        <div class="panzoom">
+            <img src="map.jpg" class="background" width='100%' height='100%'/>
+            <img src="420567.png" class="foreground" width='100%' height='100%'/>
+        </div>
+      </div>
+      <script>
+        (function() {
+          var $section = $('#focal');
+          var $panzoom = $section.find('.panzoom').panzoom();
+          $panzoom.parent().on('mousewheel.focal', function( e ) {
+            e.preventDefault();
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('option',  { minscale: 0.1, });
+            $panzoom.panzoom('zoom', zoomOut, {
+              increment: 0.1,
+              minscale: 0.1,
+              animate: false,
+              focal: e
+            });
+          });
+        })();
+      </script>
+    </section>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-25872368-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

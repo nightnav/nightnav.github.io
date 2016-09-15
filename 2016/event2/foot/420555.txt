@@ -1,0 +1,28 @@
+ Pink Puffas 	Tag ID: 420555 	Course: Foot Score
+
+From	To	Time Punched		Your Time	Place		Fastest Time	Median Time	% Behind Fastest
+Start 	127 	 	0:01:01 	27 / 30    	0:00:01 	0:00:32 	6000 %
+127 	126 	 	0:05:19 	3 / 3    	0:01:29 	0:01:46 	258 %
+126 	130 	 	0:01:32 	18 / 19    	0:00:00 	0:00:33 	Invalid Time so no ranking info available 	
+130 	32 	 	0:04:54 	2 / 2    	0:01:27 	0:03:10 	237 %
+32 	63 	 	0:02:11 	24 / 25    	0:01:05 	0:01:29 	101 %
+63 	44 	 	0:04:26 	2 / 2    	0:01:30 	0:02:58 	195 %
+44 	53 	 	0:03:37 	21 / 26    	0:01:31 	0:02:15 	138 %
+53 	69 	 	0:03:12 	29 / 29    	0:00:45 	0:01:18 	326 %
+69 	71 	 	0:04:56 	25 / 25    	0:00:48 	0:01:13 	516 %
+71 	40 	 	0:05:15 	8 / 9    	0:00:40 	0:01:52 	687 %
+40 	41 	 	0:05:15 	20 / 20    	0:00:28 	0:01:07 	1025 %
+41 	54 	 	0:03:17 	8 / 8    	0:00:57 	0:01:28 	245 %
+54 	60 	 	0:06:54 	3 / 3    	0:01:32 	0:03:53 	350 %
+60 	38 	 	0:02:09 	10 / 15    	0:00:00 	0:01:15 	Invalid Time so no ranking info available 	
+38 	Finish 	 	0:02:08 	7 / 10    	-1 day, 23:07:29 	0:01:37 	-99 %
+
+
+Extra Controls
+	Control Code	Points
+
+
+Points Scored:  600
+Late Penalty:  0
+Final Score:    600
+Total Time:  2000-01-01 00:56:06
