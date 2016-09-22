@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Start - 63</title>
+        <style>
+            .datagrid table { border-collapse: collapse; text-align: left; width: 100%; }
+            .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+            .datagrid table td, .datagrid table th { padding: 0px 4px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEf4; color: #00557F; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }
+            <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.11.0.min.css" type="text/css" />
+        </style>
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.11.0.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+        </script>
+    </head>
+    <body>
+        <center>
+            <h1>Start - 63</h1>
+        </center>
+        <div style="float:left; width:50%; ">
+            <div class="datagrid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Place</th>
+                            <th>Time</th>
+                            <th>Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                            <td> 1 </td>
+                            <td> 0:01:34 </td>
+                            <td> <a href="420867.html"> Robert Jarvis </a> </td>
+                            <tr class="alt">
+                        <td> 2 </td>
+                            <td> 0:01:44 </td>
+                            <td> <a href="420865.html"> Hazel </a> </td>
+                            <tr>
+                            <td> 3 </td>
+                            <td> 0:01:47 </td>
+                            <td> <a href="1470116.html">Boris De Bouck </a> </td>
+                            <tr class="alt">
+                        <td> 4 </td>
+                            <td> 0:01:53 </td>
+                            <td> <a href="436723.html"> SP1 </a> </td>
+                            <tr>
+                            <td> 5 </td>
+                            <td> 0:01:59 </td>
+                            <td> <a href="420891.html"> CGHS Geo Geeks </a> </td>
+                            <tr class="alt">
+                        <td> 6 </td>
+                            <td> 0:02:02 </td>
+                            <td> <a href="1417156.html">Brian Wilson </a> </td>
+                            <tr>
+                            <td> 7 </td>
+                            <td> 0:02:05 </td>
+                            <td> <a href="2087459.html">William MacManus </a> </td>
+                            <tr class="alt">
+                        <td> 8 </td>
+                            <td> 0:02:08 </td>
+                            <td> <a href="420599.html"> Jarrod Cook </a> </td>
+                            <tr>
+                            <td> 9 </td>
+                            <td> 0:02:11 </td>
+                            <td> <a href="420594.html">Paul Yeoman </a> </td>
+                            <tr class="alt">
+                        <td> 10 </td>
+                            <td> 0:03:54 </td>
+                            <td> <a href="420895.html">Will Bowman </a> </td>
+                            <tr>
+                            <td> 11 </td>
+                            <td> 0:08:17 </td>
+                            <td> <a href="420894.html">Calvin Watson Kate Feisst </a> </td>
+                            <tr class="alt">
+                        <td> 12 </td>
+                            <td> 0:13:31 </td>
+                            <td> <a href="420591.html">Leah, Simon Woods </a> </td>
+                            <tr>
+                            <td> 13 </td>
+                            <td> 0:14:20 </td>
+                            <td> <a href="441401.html"> Lucy, Kirstie, Jed </a> </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="float:right; width:50%; ">
+            
+<div class="plotdiv" id="10cf409c-8042-433e-ad78-d2ede679e553"></div>
+            
+<script type="text/javascript">
+    Bokeh.$(function() {
+    var docs_json = {"dbcfff77-0cb7-49d6-9aeb-45abd7c5dc16": {"version": "0.11.0", "roots": {"root_ids": ["19bf3a96-83eb-43cf-b939-ab032d0daa2d"], "references": [{"attributes": {}, "type": "BasicTickFormatter", "id": "3a09f5f3-6d79-4d36-88df-55e2198c2027"}, {"attributes": {"nonselection_glyph": {"type": "ImageURL", "id": "a9888a88-caa3-4c3a-b68f-b33ace1936b2"}, "data_source": {"type": "ColumnDataSource", "id": "8001be21-d820-4dd5-b55a-5dafe99218eb"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "ImageURL", "id": "0a73375b-6ef1-4e26-8837-2a60561d7b56"}}, "type": "GlyphRenderer", "id": "f0db89da-a4cc-4423-9448-b8e0c69b00c6"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "19bf3a96-83eb-43cf-b939-ab032d0daa2d"}, "formatter": {"type": "BasicTickFormatter", "id": "3a09f5f3-6d79-4d36-88df-55e2198c2027"}, "ticker": {"type": "BasicTicker", "id": "fe81bd42-f92d-46f4-9309-3b7b7232cc2c"}, "visible": null}, "type": "LinearAxis", "id": "1f778055-3fa8-4399-b5d4-3762af73c3ee"}, {"attributes": {}, "type": "BasicTicker", "id": "80cae54b-7a52-465c-8864-46f494c5928f"}, {"attributes": {}, "type": "BasicTicker", "id": "fe81bd42-f92d-46f4-9309-3b7b7232cc2c"}, {"attributes": {"nonselection_glyph": {"type": "Line", "id": "f881381e-cdfd-43dd-88bc-4003a438e3af"}, "data_source": {"type": "ColumnDataSource", "id": "e1615e02-525c-4aec-b298-b1aad895fae5"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "Line", "id": "7a89f1c7-9bf6-4dab-b421-31d074c51986"}}, "type": "GlyphRenderer", "id": "39cb7e24-ab23-4894-9928-801e89bc1591"}, {"attributes": {"callback": null, "column_names": ["y", "x"], "data": {"y": [100, 103], "x": [100, 192]}}, "type": "ColumnDataSource", "id": "e1615e02-525c-4aec-b298-b1aad895fae5"}, {"attributes": {"url": {"field": "url"}, "x": {"value": -252}, "y": {"value": 1208}}, "type": "ImageURL", "id": "a9888a88-caa3-4c3a-b68f-b33ace1936b2"}, {"attributes": {}, "type": "ToolEvents", "id": "bc921b8f-cca8-47e4-a8bd-e323312b58cb"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "19bf3a96-83eb-43cf-b939-ab032d0daa2d"}, "ticker": {"type": "BasicTicker", "id": "80cae54b-7a52-465c-8864-46f494c5928f"}}, "type": "Grid", "id": "3bea55d5-dddb-48de-a49f-a03d8788f3b5"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "19bf3a96-83eb-43cf-b939-ab032d0daa2d"}, "formatter": {"type": "BasicTickFormatter", "id": "e5f3ee00-d2d3-4c89-8747-992eb9990b08"}, "ticker": {"type": "BasicTicker", "id": "80cae54b-7a52-465c-8864-46f494c5928f"}, "visible": null}, "type": "LinearAxis", "id": "80ee77f0-e89c-4221-af25-e5dcf42f3407"}, {"attributes": {"url": {"field": "url"}, "x": {"value": -252}, "y": {"value": 1208}}, "type": "ImageURL", "id": "0a73375b-6ef1-4e26-8837-2a60561d7b56"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "19bf3a96-83eb-43cf-b939-ab032d0daa2d"}, "ticker": {"type": "BasicTicker", "id": "fe81bd42-f92d-46f4-9309-3b7b7232cc2c"}, "dimension": 1}, "type": "Grid", "id": "089cde3b-a0c4-4a97-8958-2b80a36099e2"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "e5f3ee00-d2d3-4c89-8747-992eb9990b08"}, {"attributes": {"callback": null, "end": 202}, "type": "Range1d", "id": "0fa07172-a12c-44a0-b047-257db9bfa31b"}, {"attributes": {"line_color": {"value": "red"}, "line_alpha": {"value": 0.5}, "y": {"field": "y"}, "x": {"field": "x"}, "line_width": {"value": 3}}, "type": "Line", "id": "7a89f1c7-9bf6-4dab-b421-31d074c51986"}, {"attributes": {"x_range": {"type": "Range1d", "id": "ea927fce-8bd1-49d4-88fb-8744c12d423e"}, "min_border_bottom": 0, "toolbar_location": null, "plot_height": 203, "plot_width": 292, "renderers": [{"type": "LinearAxis", "id": "80ee77f0-e89c-4221-af25-e5dcf42f3407"}, {"type": "Grid", "id": "3bea55d5-dddb-48de-a49f-a03d8788f3b5"}, {"type": "LinearAxis", "id": "1f778055-3fa8-4399-b5d4-3762af73c3ee"}, {"type": "Grid", "id": "089cde3b-a0c4-4a97-8958-2b80a36099e2"}, {"type": "GlyphRenderer", "id": "f0db89da-a4cc-4423-9448-b8e0c69b00c6"}, {"type": "GlyphRenderer", "id": "39cb7e24-ab23-4894-9928-801e89bc1591"}], "below": [{"type": "LinearAxis", "id": "80ee77f0-e89c-4221-af25-e5dcf42f3407"}], "min_border_top": 0, "tool_events": {"type": "ToolEvents", "id": "bc921b8f-cca8-47e4-a8bd-e323312b58cb"}, "min_border_left": 0, "logo": null, "min_border_right": 0, "y_range": {"type": "Range1d", "id": "0fa07172-a12c-44a0-b047-257db9bfa31b"}, "left": [{"type": "LinearAxis", "id": "1f778055-3fa8-4399-b5d4-3762af73c3ee"}]}, "type": "Plot", "id": "19bf3a96-83eb-43cf-b939-ab032d0daa2d", "subtype": "Figure"}, {"attributes": {"callback": null, "end": 291}, "type": "Range1d", "id": "ea927fce-8bd1-49d4-88fb-8744c12d423e"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.1}, "y": {"field": "y"}, "x": {"field": "x"}, "line_width": {"value": 3}}, "type": "Line", "id": "f881381e-cdfd-43dd-88bc-4003a438e3af"}, {"attributes": {"callback": null, "column_names": ["url"], "data": {"url": ["map.jpg"]}}, "type": "ColumnDataSource", "id": "8001be21-d820-4dd5-b55a-5dafe99218eb"}]}, "title": "Bokeh Application"}};
+    var render_items = [{"docid": "dbcfff77-0cb7-49d6-9aeb-45abd7c5dc16", "elementid": "10cf409c-8042-433e-ad78-d2ede679e553", "modelid": "19bf3a96-83eb-43cf-b939-ab032d0daa2d"}];
+    
+    Bokeh.embed.embed_items(docs_json, render_items);
+});
+</script>
+        </div>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-25872368-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

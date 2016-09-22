@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Nikki Wheaton</title>
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.css" type="text/css" />
+
+    <script src="jquery.js"></script>
+    <script src="jquery.panzoom.min.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.11.1.min.js"></script>
+    <script type="text/javascript"> Bokeh.set_log_level("info"); </script>
+    <style>
+    .background { position: relative; top: 0; left: 0; z-index: 1; }
+    .foreground { position: absolute; top: 0; left: 0; z-index: 2; }
+
+    .datagrid table { border-collapse: collapse; text-align: left; width: 100%; }
+    .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+    .datagrid table td, .datagrid table th { padding: 0px 4px; }.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; }.datagrid table tbody .alt td { background: #E1EEf4; color: #00557F; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }}
+    </style>
+</head>
+
+<body>
+<h1><a href="420893test.html">Nikki Wheaton</a> Course Foot</h1>
+<div style="float:left; width:50%;">
+    <div class="datagrid">
+    <table>
+        <thead>
+            <tr>
+            <th>Control</th>
+            <th>Points</th>
+            <th>Time Punched</th>
+            <th>Distance</th>
+            <th>Your Time</th>
+            <th>Pace</th>
+            <th>Place</th>
+            <th>Fastest Time</th>
+            <th>Median Time</th>
+            <th>% Behind Fastest</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="Start-37.html">37</a></td>
+            <td> 30 </td>
+            <td>  </td>
+            <td> 0.25 </td>
+            <td> 0:08:26</td>
+            <td> 33:44</td>
+            <td> 2 / 3</td>
+            <td> 0:08:15</td>
+            <td> 0:08:26</td>
+            <td> 2%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="37-31.html">31</a></td>
+            <td> 30 </td>
+            <td>  </td>
+            <td> 0.35 </td>
+            <td> 0:05:18</td>
+            <td> 15:08</td>
+            <td> 2 / 5</td>
+            <td> 0:04:32</td>
+            <td> 0:07:29</td>
+            <td> 16%</td>
+        </tr>
+        <tr>
+            <td><a href="31-42.html">42</a></td>
+            <td> 40 </td>
+            <td>  </td>
+            <td> 0.12 </td>
+            <td> 0:01:49</td>
+            <td> 15:08</td>
+            <td> 5 / 9</td>
+            <td> 0:00:52</td>
+            <td> 0:01:49</td>
+            <td> 109%</td>
+        </tr>
+        <tr class="alt">
+        <td><a href="42-Finish.html">Finish</a></td>
+            <td> 0 </td>
+            <td>  </td>
+            <td> 0.53 </td>
+            <td> 0:38:27</td>
+            <td> 1:12:32</td>
+            <td> 4 / 4</td>
+            <td> 0:03:42</td>
+            <td> 0:06:11</td>
+            <td> 939%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<span title="This is the straight line distance between controls. It does not take into account&#10;the actual route the team took and does not allow for climb."> Total Distance Covered: 1.25km </span><br>
+    Points Scored: 100<br>
+    Late Penalty: 0<br>
+    Final Score: 100<br>
+    Total Time: 0hours 54minutes 0seconds<br>
+    <span title="Efficiency is the number of points scored per km, the higher the number the more&#10;efficient the route. This doesn't take into account the climb though so is at best&#10;a rough approximation of the most efficient route.">Efficiency: 80.0 points/km</span><br>
+</div>
+<div style="float:right; width:50%; ">
+
+<div class="plotdiv" id="572bf819-8bd1-409f-9a90-7e8ac5a45f4f"></div>
+
+<script type="text/javascript">
+    Bokeh.$(function() {
+    var docs_json = {"b06acc15-2816-45ae-9e66-65544b64c1fe": {"version": "0.11.0", "roots": {"root_ids": ["f3f45487-1f48-4365-9a2d-7e5ef573c608"], "references": [{"attributes": {"callback": null, "column_names": ["control", "elapsedTime", "score", "dist", "xCoord", "yCoord", "time_of_day"], "data": {"control": ["", "37", "31", "42", "Finish", "Extras"], "dist": [0.0, 0.25, 0.6, 0.72, 1.25, 1.25], "yCoord": [589, 589, 509, 383, 395, 589], "elapsedTime": [0.0, 0.14055555555555554, 0.2288888888888889, 0.25916666666666666, 0.9, 0.9], "time_of_day": ["", "", "", "", "", ""], "score": [0, 30, 60, 100, 100, 100], "xCoord": [352, 352, 405, 364, 409, 355]}}, "type": "ColumnDataSource", "id": "12b4f5f3-5e7c-4245-849b-35f31c1d93d3"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "0cf65c0c-f0e7-4661-a1b3-ec6ca22e298e"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}, "axis_label": "Time (hrs)", "formatter": {"type": "BasicTickFormatter", "id": "93dbbeee-8791-4f8b-baf9-88c2cd48b9e5"}, "ticker": {"type": "SingleIntervalTicker", "id": "2037be80-ec3c-4088-809e-5da2ec75c6ce"}}, "type": "LinearAxis", "id": "0b6ccc9b-197c-44ea-89e7-fe41175ceaef"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "25e59584-ffb3-4770-a196-20d7ecc61a0a"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.1}, "y": {"field": "score"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "7bc63b5f-09bc-4dd2-b71e-3f63549e0d93"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}, "ticker": {"type": "BasicTicker", "id": "82b738c8-a70d-4808-873e-34356194f3e9"}, "dimension": 1}, "type": "Grid", "id": "b9998bb2-d988-4cb7-adc8-28f58b4c72b5"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "2d21b2cc-56b1-4d55-bdbb-17d7235c93a2"}, {"attributes": {}, "type": "BasicTicker", "id": "82b738c8-a70d-4808-873e-34356194f3e9"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}, "ticker": {"type": "SingleIntervalTicker", "id": "2d21b2cc-56b1-4d55-bdbb-17d7235c93a2"}}, "type": "Grid", "id": "18086b64-1558-4dff-af23-976e31c8868c"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "2037be80-ec3c-4088-809e-5da2ec75c6ce"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "93dbbeee-8791-4f8b-baf9-88c2cd48b9e5"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}}, "type": "CrosshairTool", "id": "dc011dbc-5b96-43cc-be42-a27796b8e3a1"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "3b1ce07f-a5d8-4181-b4a3-7004120ef09b"}, {"attributes": {}, "type": "ToolEvents", "id": "e9057884-ff96-43b5-ad96-20be8c871432"}, {"attributes": {"x_range": {"type": "DataRange1d", "id": "25e59584-ffb3-4770-a196-20d7ecc61a0a"}, "y_range": {"type": "DataRange1d", "id": "0cf65c0c-f0e7-4661-a1b3-ec6ca22e298e"}, "toolbar_location": null, "renderers": [{"type": "LinearAxis", "id": "0b6ccc9b-197c-44ea-89e7-fe41175ceaef"}, {"type": "Grid", "id": "18086b64-1558-4dff-af23-976e31c8868c"}, {"type": "LinearAxis", "id": "4f8d02ae-2b0f-4fed-8bc6-0a61ab6719ec"}, {"type": "Grid", "id": "b9998bb2-d988-4cb7-adc8-28f58b4c72b5"}, {"type": "GlyphRenderer", "id": "88e3cb9a-99cd-4604-9eed-e4b014e33e8b"}, {"type": "BoxAnnotation", "id": "d2916f1f-78c6-4efc-a2db-8a953180470d"}], "plot_width": 800, "below": [{"type": "LinearAxis", "id": "0b6ccc9b-197c-44ea-89e7-fe41175ceaef"}], "tool_events": {"type": "ToolEvents", "id": "e9057884-ff96-43b5-ad96-20be8c871432"}, "plot_height": 250, "logo": null, "tools": [{"type": "HoverTool", "id": "d39ecc74-6a3d-43aa-93d5-0acf70ad4fee"}, {"type": "CrosshairTool", "id": "dc011dbc-5b96-43cc-be42-a27796b8e3a1"}], "left": [{"type": "LinearAxis", "id": "4f8d02ae-2b0f-4fed-8bc6-0a61ab6719ec"}]}, "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608", "subtype": "Figure"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}, "axis_label": "Score (pts)", "formatter": {"type": "BasicTickFormatter", "id": "3b1ce07f-a5d8-4181-b4a3-7004120ef09b"}, "ticker": {"type": "BasicTicker", "id": "82b738c8-a70d-4808-873e-34356194f3e9"}}, "type": "LinearAxis", "id": "4f8d02ae-2b0f-4fed-8bc6-0a61ab6719ec"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.8}, "y": {"field": "score"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "8d34f686-25b7-4e0a-9d33-6ab6909ba43b"}, {"attributes": {"tooltips": [["control", "@control"], ["score", "@score"], ["dist", "@dist"], ["Time", "@time_of_day"]], "callback": null, "plot": {"subtype": "Figure", "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}}, "type": "HoverTool", "id": "d39ecc74-6a3d-43aa-93d5-0acf70ad4fee"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}, "right": 19.0, "fill_alpha": {"value": 0.1}, "fill_color": {"value": "grey"}, "left": 0.0}, "type": "BoxAnnotation", "id": "d2916f1f-78c6-4efc-a2db-8a953180470d"}, {"attributes": {"nonselection_glyph": {"type": "Line", "id": "7bc63b5f-09bc-4dd2-b71e-3f63549e0d93"}, "data_source": {"type": "ColumnDataSource", "id": "12b4f5f3-5e7c-4245-849b-35f31c1d93d3"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "Line", "id": "8d34f686-25b7-4e0a-9d33-6ab6909ba43b"}}, "type": "GlyphRenderer", "id": "88e3cb9a-99cd-4604-9eed-e4b014e33e8b"}]}, "title": "Bokeh Application"}};
+    var render_items = [{"docid": "b06acc15-2816-45ae-9e66-65544b64c1fe", "elementid": "572bf819-8bd1-409f-9a90-7e8ac5a45f4f", "modelid": "f3f45487-1f48-4365-9a2d-7e5ef573c608"}];
+    
+    Bokeh.embed.embed_items(docs_json, render_items);
+});
+</script>
+
+<div class="plotdiv" id="2a87590b-866b-4bf2-8d8f-83290c2056a3"></div>
+
+<script type="text/javascript">
+    Bokeh.$(function() {
+    var docs_json = {"a69fe82e-281d-469d-b382-3def2f2235c1": {"version": "0.11.0", "roots": {"root_ids": ["a825bf75-2280-430d-b19b-ff4a007380dd"], "references": [{"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd"}, "ticker": {"type": "BasicTicker", "id": "64630a78-17c5-482f-8a09-ee036d309de1"}, "dimension": 1}, "type": "Grid", "id": "b3a113d7-c9c7-4deb-9b96-5185d0180674"}, {"attributes": {"tooltips": [["control", "@control"], ["score", "@score"], ["dist", "@dist"], ["Time", "@time_of_day"]], "callback": null, "plot": {"subtype": "Figure", "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd"}}, "type": "HoverTool", "id": "4ab047fd-420a-4b3b-929f-ba5e6189d546"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "f894340c-d6fc-4512-85bc-5107ec385872"}, {"attributes": {}, "type": "ToolEvents", "id": "25778f87-d838-4f1a-8d11-a3628210ceb8"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "3d613afa-8e33-4710-8fa6-04cbf16c5adf"}, {"attributes": {"nonselection_glyph": {"type": "Line", "id": "12268857-afcb-4d67-be7e-98071715cbf5"}, "data_source": {"type": "ColumnDataSource", "id": "1a151b61-1c77-4397-b9d8-b432d2be34ec"}, "selection_glyph": null, "hover_glyph": null, "glyph": {"type": "Line", "id": "2017024a-6379-4a21-86f6-fb90618c9b25"}}, "type": "GlyphRenderer", "id": "442b5e01-54b7-4709-a3ac-68e669470c0f"}, {"attributes": {"callback": null, "column_names": ["control", "elapsedTime", "score", "dist", "xCoord", "yCoord", "time_of_day"], "data": {"control": ["", "37", "31", "42", "Finish", "Extras"], "dist": [0.0, 0.25, 0.6, 0.72, 1.25, 1.25], "yCoord": [589, 589, 509, 383, 395, 589], "elapsedTime": [0.0, 0.14055555555555554, 0.2288888888888889, 0.25916666666666666, 0.9, 0.9], "time_of_day": ["", "", "", "", "", ""], "score": [0, 30, 60, 100, 100, 100], "xCoord": [352, 352, 405, 364, 409, 355]}}, "type": "ColumnDataSource", "id": "1a151b61-1c77-4397-b9d8-b432d2be34ec"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "be28e01d-e860-41af-bfec-0a6bb914046e"}, {"attributes": {"x_range": {"type": "DataRange1d", "id": "3d613afa-8e33-4710-8fa6-04cbf16c5adf"}, "y_range": {"type": "DataRange1d", "id": "15d60ea1-73ea-4b9c-9e59-4c1d50657c4a"}, "toolbar_location": null, "renderers": [{"type": "LinearAxis", "id": "1f3872f7-8e4e-43ec-b432-64754ac95c2e"}, {"type": "Grid", "id": "4f297ba7-7fb9-4755-af05-5efc194d8eaa"}, {"type": "LinearAxis", "id": "5841757c-fbc7-4873-9c88-d33243fbd9fd"}, {"type": "Grid", "id": "b3a113d7-c9c7-4deb-9b96-5185d0180674"}, {"type": "GlyphRenderer", "id": "442b5e01-54b7-4709-a3ac-68e669470c0f"}, {"type": "BoxAnnotation", "id": "b41db03d-519b-4977-9ef5-25020319a749"}], "plot_width": 800, "below": [{"type": "LinearAxis", "id": "1f3872f7-8e4e-43ec-b432-64754ac95c2e"}], "tool_events": {"type": "ToolEvents", "id": "25778f87-d838-4f1a-8d11-a3628210ceb8"}, "plot_height": 250, "logo": null, "tools": [{"type": "HoverTool", "id": "4ab047fd-420a-4b3b-929f-ba5e6189d546"}, {"type": "CrosshairTool", "id": "befe9d10-cea7-46b5-8663-3e16fcd38a11"}], "left": [{"type": "LinearAxis", "id": "5841757c-fbc7-4873-9c88-d33243fbd9fd"}]}, "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd", "subtype": "Figure"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd"}, "axis_label": "Time (hrs)", "formatter": {"type": "BasicTickFormatter", "id": "5eacf84f-27ff-4d02-aa5c-878d736a5b46"}, "ticker": {"type": "SingleIntervalTicker", "id": "be28e01d-e860-41af-bfec-0a6bb914046e"}}, "type": "LinearAxis", "id": "1f3872f7-8e4e-43ec-b432-64754ac95c2e"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.8}, "y": {"field": "dist"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "2017024a-6379-4a21-86f6-fb90618c9b25"}, {"attributes": {}, "type": "BasicTicker", "id": "64630a78-17c5-482f-8a09-ee036d309de1"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd"}, "right": 19.0, "fill_alpha": {"value": 0.1}, "fill_color": {"value": "grey"}, "left": 0.0}, "type": "BoxAnnotation", "id": "b41db03d-519b-4977-9ef5-25020319a749"}, {"attributes": {}, "type": "BasicTickFormatter", "id": "5eacf84f-27ff-4d02-aa5c-878d736a5b46"}, {"attributes": {"line_color": {"value": "#1f77b4"}, "line_alpha": {"value": 0.1}, "y": {"field": "dist"}, "x": {"field": "elapsedTime"}, "line_width": {"value": 3}}, "type": "Line", "id": "12268857-afcb-4d67-be7e-98071715cbf5"}, {"attributes": {"callback": null, "start": 0}, "type": "DataRange1d", "id": "15d60ea1-73ea-4b9c-9e59-4c1d50657c4a"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd"}, "ticker": {"type": "SingleIntervalTicker", "id": "cc3ff820-24cd-46fc-ba2c-a86cb146fd7b"}}, "type": "Grid", "id": "4f297ba7-7fb9-4755-af05-5efc194d8eaa"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd"}, "axis_label": "Dist (km)", "formatter": {"type": "BasicTickFormatter", "id": "f894340c-d6fc-4512-85bc-5107ec385872"}, "ticker": {"type": "BasicTicker", "id": "64630a78-17c5-482f-8a09-ee036d309de1"}}, "type": "LinearAxis", "id": "5841757c-fbc7-4873-9c88-d33243fbd9fd"}, {"attributes": {"interval": 6, "num_minor_ticks": 6}, "type": "SingleIntervalTicker", "id": "cc3ff820-24cd-46fc-ba2c-a86cb146fd7b"}, {"attributes": {"plot": {"subtype": "Figure", "type": "Plot", "id": "a825bf75-2280-430d-b19b-ff4a007380dd"}}, "type": "CrosshairTool", "id": "befe9d10-cea7-46b5-8663-3e16fcd38a11"}]}, "title": "Bokeh Application"}};
+    var render_items = [{"docid": "a69fe82e-281d-469d-b382-3def2f2235c1", "elementid": "2a87590b-866b-4bf2-8d8f-83290c2056a3", "modelid": "a825bf75-2280-430d-b19b-ff4a007380dd"}];
+    
+    Bokeh.embed.embed_items(docs_json, render_items);
+});
+</script>
+
+    <section id="focal">
+      <div style="position: relative; left: 0; top: 0;" class="parent">
+        <div class="panzoom">
+            <img src="map.jpg" class="background" width='100%' height='100%'/>
+            <img src="420893.png" class="foreground" width='100%' height='100%'/>
+        </div>
+      </div>
+      <script>
+        (function() {
+          var $section = $('#focal');
+          var $panzoom = $section.find('.panzoom').panzoom();
+          $panzoom.parent().on('mousewheel.focal', function( e ) {
+            e.preventDefault();
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('option',  { minscale: 0.1, });
+            $panzoom.panzoom('zoom', zoomOut, {
+              increment: 0.1,
+              minscale: 0.1,
+              animate: false,
+              focal: e
+            });
+          });
+        })();
+      </script>
+    </section>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-25872368-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
